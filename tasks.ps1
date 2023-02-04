@@ -49,6 +49,7 @@ function Invoke-Build
     {
         Write-Host "Can publish !" -ForegroundColor Green
     }
+    Invoke-Clean
 }
 
 if ($Task -eq 'clean')
