@@ -90,11 +90,12 @@ Describe 'Git tagging' -Skip {
 
 Describe 'Testing Import-Module' {
     BeforeAll {
-        $import = Import-Module $manifestData -Force
-        $import
+        Import-Module $manifestData -Force
+        $function = Get-PublicOne.ps1
+        $function
     }
 
     It 'Has not thrown an error' {
-        { $import } | Should -Not -Throw
+        { $function } | Should -Not -Throw
     }
 }
