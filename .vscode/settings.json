@@ -1,0 +1,39 @@
+{
+    "[powershell]": {
+        "files.autoGuessEncoding": true,
+        "files.encoding": "utf8bom"
+    },
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "trailing",
+    "editor.tabCompletion": "on",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "markdown.extension.toc.orderedList": true,
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "markdown.validate.enabled": true,
+    "markdownlint.config": {
+        "MD004": false,
+        "MD013": false,
+        "MD024": false,
+        "MD033": false,
+        "MD034": false,
+        "MD038": false,
+        "MD042": false
+    },
+    "pester.autoRunOnSave": false,
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+    "powershell.codeFormatting.preset": "Allman",
+    "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+    "powershell.integratedConsole.startInBackground": true,
+    "powershell.integratedConsole.suppressStartupBanner": true,
+    "powershell.pester.codeLens": false,
+    "powershell.pester.outputVerbosity": "Normal",
+    "powershell.pester.useLegacyCodeLens": false,
+    "powershell.powerShellDefaultVersion": "PowerShell (Store)"
+}

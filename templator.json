@@ -1,0 +1,14 @@
+{
+    "ToReplace": [
+        "ProjectName",
+        "ProjectAuthor",
+        "ProjectCompany",
+        "ProjectMail",
+        "ProjectDescription",
+        "ProjectVersion",
+        "ProjectPowerShellVersion",
+        "ProjectCopyright",
+        "ProjectRepositoryOwner",
+        "ProjectGUID"
+    ]
+}
