@@ -4,6 +4,7 @@
     "recommendations": [
         "ms-vscode.PowerShell",
         "DavidAnson.vscode-markdownlint",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "usernamehw.remove-empty-lines"
     ]
 }
