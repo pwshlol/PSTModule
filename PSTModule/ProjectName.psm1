@@ -16,3 +16,6 @@ Get-ChildItem $PSScriptRoot\Private\*.ps1 -Recurse | ForEach-Object { . $_.FullN
 $public = Get-ChildItem $PSScriptRoot\Public\*.ps1 -Recurse
 $public | ForEach-Object { . $_.FullName }
 Export-ModuleMember -Function $public.BaseName
+
+# Tell the user our module is ready !
+Write-Host ($Localization.Ready -f "ProjectName")
