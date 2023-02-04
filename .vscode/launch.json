@@ -4,8 +4,8 @@
         {
             "type": "PowerShell",
             "request": "launch",
-            "name": "ProjectName",
-            "script": "${workspaceRoot}\\ProjectName.ps1",
+            "name": "Build",
+            "script": "${workspaceRoot}\\Build.ps1 build",
             "args": [],
             "cwd": "${workspaceRoot}"
         }
