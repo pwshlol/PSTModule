@@ -91,7 +91,7 @@ Describe 'Git tagging' -Skip {
 Describe 'Testing Import-Module' {
     BeforeAll {
         Import-Module $manifestData -Force
-        $function = Get-PublicOne.ps1
+        $function = Get-PublicOne
         $function
     }
 
