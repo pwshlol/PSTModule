@@ -10,8 +10,7 @@
 
     $changelogPath = Join-Path -Path $env:BuildProjectPath -Child 'CHANGELOG.md'
     $changelogVersion = Get-Content $changelogPath | ForEach-Object {
-        if ($_ -match "^##\s\[(?<Version>(\d+\.){1,3}\d+)\]")
-        {
+        if ($_ -match "^##\s\[(?<Version>(\d+\.){1,3}\d+)\]") {
             $changelogVersion = $matches.Version
             $changelogVersion
             break
@@ -71,8 +70,7 @@ Describe 'Git tagging' -Skip {
     BeforeAll {
         $gitTagVersion = $null ; $gitTagVersion
 
-        if ($git = Get-Command git -CommandType Application -ErrorAction SilentlyContinue)
-        {
+        if ($git = Get-Command git -CommandType Application -ErrorAction SilentlyContinue) {
             $thisCommit = & $git log --decorate --oneline HEAD~1..HEAD
             if ($thisCommit -match 'tag:\s*(\d+(?:\.\d+)*)') { $gitTagVersion = $matches[1] }
         }

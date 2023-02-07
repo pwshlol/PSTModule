@@ -1,10 +1,7 @@
-﻿try
-{
+﻿try {
     # Try to import from installed UI Culture
     Import-LocalizedData -BindingVariable Global:Localization -BaseDirectory .\Localizations -FileName ProjectName -ErrorAction SilentlyContinue
-}
-catch
-{
+} catch {
     # Import en-US
     Import-LocalizedData -BindingVariable Global:Localization -BaseDirectory .\Localizations -FileName ProjectName -UICulture en-us
 }

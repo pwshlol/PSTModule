@@ -9,22 +9,18 @@ Set-Location $PSScriptRoot
 
 Write-Host "TASK = $Task"
 
-function Invoke-Clean
-{
-    if (Test-Path "output")
-    {
+function Invoke-Clean {
+    if (Test-Path "output") {
         Remove-Item "output" -Recurse -Force -Confirm:$false
     }
 }
 
-function Invoke-Build
-{
+function Invoke-Build {
     Invoke-Clean
 
     $version = (Import-PowerShellDataFile -Path "$PSScriptRoot\ProjectName\ProjectName.psd1").ModuleVersion.ToString()
 
-    if (Get-Item "output" -ErrorAction SilentlyContinue)
-    {
+    if (Get-Item "output" -ErrorAction SilentlyContinue) {
         Remove-Item "output" -Recurse -Force -Confirm:$false
     }
 
@@ -40,23 +36,17 @@ function Invoke-Build
 
     # Tests
     $Pester = Invoke-Pester -Path .\Tests\Build -PassThru
-    if ($Pester.FailedCount -gt 0)
-    {
+    if ($Pester.FailedCount -gt 0) {
         Write-Host "Not ready to publish !" -ForegroundColor Yellow
         Exit 1
-    }
-    else
-    {
+    } else {
         Write-Host "Can publish !" -ForegroundColor Green
     }
     Invoke-Clean
 }
 
-if ($Task -eq 'clean')
-{
+if ($Task -eq 'clean') {
     Invoke-Clean
-}
-elseif ($Task -eq 'build')
-{
+} elseif ($Task -eq 'build') {
     Invoke-Build
 }
