@@ -35,7 +35,7 @@
     "powershell.pester.codeLens": false,
     "powershell.pester.outputVerbosity": "Normal",
     "powershell.pester.useLegacyCodeLens": false,
-    "powershell.powerShellDefaultVersion": "PowerShell (Store)",
+    "powershell.powerShellDefaultVersion": "PowerShell (x64)",
     "remove-empty-lines.allowedNumberOfEmptyLines": 1,
     "remove-empty-lines.runOnSave": true
 }

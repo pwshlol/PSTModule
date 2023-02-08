@@ -3,8 +3,10 @@
     // for the documentation about the extensions.json format
     "recommendations": [
         "ms-vscode.PowerShell",
+        "pspester.pester-test",
         "DavidAnson.vscode-markdownlint",
         "redhat.vscode-yaml",
-        "usernamehw.remove-empty-lines"
+        "usernamehw.remove-empty-lines",
+        "aaron-bond.better-comments"
     ]
 }
